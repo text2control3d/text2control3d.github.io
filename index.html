@@ -112,7 +112,7 @@
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
-                  <span>Paper (comingn soon)</span>
+                  <span>Paper</span>
                 </a>
               </span>
               <span class="link-block">
@@ -121,7 +121,7 @@
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv (coming soon) </span>
+                  <span>arXiv</span>
                 </a>
               </span>
               <!-- Video Link. -->
@@ -131,7 +131,7 @@
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
                   </span>
-                  <span>Video (coming soon)</span>
+                  <span>Video</span>
                 </a>
               </span>
               <!-- Code Link. -->
@@ -231,13 +231,41 @@
   
 <section class="section">
   <div class="container is-max-desktop">
+    
+    <!-- main fig -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Text2Control3D </h2>
+            <img src="./static/images/fig_main.png"
+                 class="main figure"
+                 alt="main figure"/>
+      <h2 class="subtitle has-text-centered">
+        <b>Text2Control3D</b> can generate a 3D avatar given a text description and a casually captured monocular video for conditional control of facial expression and shape.
+      </h2>
+
+      </div>
+    </div>
+    <!-- main fig -->
+
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Comingn soon
+            Recent advances in diffusion models such as ControlNet have enabled geometrically controllable, high-fidelity text-to-image generation. 
+            However, none of them addresses the question of adding such controllability to text-to-3D generation. 
+            In response, we propose Text2Control3D, a controllable text-to-3D avatar generation method whose facial expression is controllable given a 
+            monocular video casually captured with hand-held camera. Our main strategy is to construct the 3D avatar in Neural Radiance Fields (NeRF)
+            optimized with a set of controlled viewpoint-aware images that we generate from ControlNet, whose condition input is the depth map extracted from the input video. 
+            When generating the viewpoint-aware images, we utilize cross-reference attention to inject well-controlled, 
+            referential facial expression and appearance via cross attention. We also conduct low-pass filtering of Gaussian latent of the diffusion model 
+            in order to ameliorate the viewpoint-agnostic texture problem we observed from our empirical analysis, where the viewpoint-aware images 
+            contain identical textures on identical pixel positions that are incomprehensible in 3D. 
+            Finally, to train NeRF with the images that are viewpoint-aware yet are not strictly consistent in geometry, 
+            our approach considers per-image geometric variation as a view of deformation from a shared 3D canonical space. 
+            Consequently, we construct the 3D avatar in a canonical space of deformable NeRF by learning a set of per-image deformation via deformation field table. 
+            We demonstrate the empirical results and discuss the effectiveness of our method. 
           </p>
         </div>
       </div>
