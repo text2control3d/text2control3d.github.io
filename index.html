@@ -285,10 +285,52 @@
             Consequently, we construct the 3D avatar in a canonical space of deformable NeRF by learning a set of per-image deformation via deformation field table. 
             We demonstrate the empirical results and discuss the effectiveness of our method. 
           </p>
+          
+
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
+  </div>
+</section>
+  <!--/ Abstract. -->
 
+<section class="section">
+  <div class="container is-max-desktop">    
+    <!-- Method -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+
+      <div class="column is-full">
+            <img src="./static/images/fig_method.png"
+                 class="method figure"
+                 alt="method figure"/>
+      </div>
+
+        <div class="content has-text-justified">
+          <p> 
+          Text2Control3D takes <b> a text description</b> (e.g. ”Elon Musk”, ”A
+          handsome white man with short-fade haircut”), and frames
+          of a <b>monocular video for facial expression
+          and shape control.</b> 
+          </p>
+          
+          <p>
+          we first extract viewpoint-augmented depth
+          maps from the monocular video. Then, we use these depth
+          maps as conditions for generating viewpoint-aware avatar
+          images using ControlNet that is enhanced with two of
+          our methods: (1) cross-reference attention to achieve controllability on facial expression and appearance across the
+          viewpoint-aware generations, and (2) low-pass filtering of
+          Gaussian latent to remove view-agnostic textures that break
+          3D consistency. Finally, as these images are viewpointaware yet are not strictly consistent in geometry, we suggest to regard the images as views of per-image deformation of 3D canonical space, and learn deformation field table to finally construct the 3D avatar in canonical space of
+          deformable NeRF.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
 </body>
 </html>
