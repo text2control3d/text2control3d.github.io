@@ -156,13 +156,13 @@ body {
   border-radius: 5px;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     filter: invert(100%);
   }
 
-  /* double apply invert filter to cancel out effect on images */
   img {
     filter: invert(100%);
   }
 }
+ */
